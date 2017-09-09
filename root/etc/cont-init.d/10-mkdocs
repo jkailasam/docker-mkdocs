@@ -1,2 +1,5 @@
 #!/usr/bin/with-contenv bash
-
+if [ ! -f "/config/mkdocs.yml" ]; then
+	mkdir -p /config
+	cp -R /defaults/* /config/
+fi
