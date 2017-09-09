@@ -11,6 +11,8 @@ pip3 install $PIP_LIST \
 # cleanup 
 rm -rf  /tmp/* /var/tmp/*
 
+# add local files
+COPY /root /
 
 # expose ports
 EXPOSE 8000
