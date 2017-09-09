@@ -7,9 +7,7 @@ ARG PIP_LIST="mkdocs mkdocs-material mkdocs-windmill"
 
 # install main packages
 RUN apk add --no-cache $BASE_APKLIST && \
-pip3 install $PIP_LIST \
-# cleanup 
-rm -rf  /tmp/* /var/tmp/*
+pip3 install $PIP_LIST
 
 # add local files
 COPY /root /
