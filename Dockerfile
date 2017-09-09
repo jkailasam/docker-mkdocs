@@ -1,4 +1,4 @@
-FROM jeeva420/alpine
+FROM jeeva420/alpine-base
 MAINTAINER Jeeva Kailasam <kjeeva@ymail.com>
 
 # Set correct environment variables
