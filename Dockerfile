@@ -3,7 +3,7 @@ MAINTAINER Jeeva Kailasam <kjeeva@ymail.com>
 
 # Set correct environment variables
 ARG BASE_APKLIST="python3"
-ARG PIP_LIST="mkdocs mkdocs-material mkdocs-windmill"
+ARG PIP_LIST="mkdocs mkdocs-material mkdocs-windmill pymdown-extensions"
 
 # install main packages
 RUN apk add --no-cache $BASE_APKLIST && \
