@@ -1,3 +1,4 @@
 #!/usr/bin/with-contenv bash
 cd /config
-mkdocs serve --dev-addr 0.0.0.0:8000
+exec \
+	s6-setuidgid abc mkdocs serve --dev-addr 0.0.0.0:8000
