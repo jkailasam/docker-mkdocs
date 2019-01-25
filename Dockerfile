@@ -7,6 +7,7 @@ ARG PIP_LIST="mkdocs mkdocs-material mkdocs-windmill pymdown-extensions"
 
 # install main packages
 RUN apk add --no-cache $BASE_APKLIST && \
+pip3 install --upgrade pip && \
 pip3 install $PIP_LIST
 
 # add local files
